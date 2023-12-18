@@ -8,12 +8,27 @@ href="https://pyscript.net/alpha/pyscript.css"/>
 <script defer 
 src="https://pyscript.net/alpha/pyscript.js”>
 </script>
- </head>
+<script src="https://github.com/Cool31/StockExchangePredictions/blob/85d8e58e4cf8867502f97ddf9f5c1a54672af8d5/stockpredict.py"></script>
+<py-env>
+-bokeh
+-numpy
+-matplotlib
+-paths: 
+-/utlis.py
+</py-env>
+
+<py-env>
+Altai
+Numpy
+Pandas
+Scikit-learn
+Panel = 0.13.1a2
+</py-env>
+</head>
 
 <body>
+alert("might not work as PyScript pkg in release stage");
 <py-script>
-
-“Hello World”
 
 import pandas as pd
 import datetime
@@ -65,24 +80,6 @@ infy['returns'].hist(bins = 100, label = 'Infosysy', alpha = 0.5)
 wipro['returns'].hist(bins = 100, label = 'Wipro', alpha = 0.5)
 plt.legend()
 </py-script>
-<py-env>
--bokeh
--numpy
--matplotlib
--paths: 
--/utlis.py
-</py-env>
-
-<py-env>
-Altair
-Numpy
-Pandas
-Scikit-learn
-Panel = 0.13.1a2
-</py-env>
-
-<py-repl id="my-repl" auto-generator="true"></py-repl>
-
-<py-script src="https:/github.com/..../stockprediction.py"></py-script>
+ <py-repl id="my-repl" auto-generator="true"></py-repl>
 </body>
 </html>
