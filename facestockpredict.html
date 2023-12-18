@@ -8,9 +8,27 @@ href="https://pyscript.net/alpha/pyscript.css"/>
 <script defer 
 src="https://pyscript.net/alpha/pyscript.js”>
 </script>
- </head>
+ <script src="https://github.com/Cool31/StockExchangePredictions/blob/85d8e58e4cf8867502f97ddf9f5c1a54672af8d5/stockfacebookfinal.py"></script>
+<py-env>
+-bokeh
+-numpy
+-matplotlib
+-paths: 
+-/utlis.py
+</py-env>
+
+<py-env>
+Altair
+Numpy
+Pandas
+Scikit-learn
+Panel = 0.13.1a2
+</py-env>
+</head>
 
 <body>
+alert("PyScript pkg in release stage, so might see python codes instead");
+ 
 <py-script>
 #facebook sentiment analysis
 import time
@@ -23,13 +41,20 @@ import unicodedata
 import numpy as np
 import re
 import string
-from numpy import linalg
-from nltk.sentiment.vader import SentimentIntensityAnalyzer
-from nltk.tokenize import sent_tokenize, word_tokenize
-from nltk.tokenize import PunktSentenceTokenizer
-from nltk.corpus import webtext
-from nltk.stem.porter import PorterStemmer
-from nltk.stem.wordnet import WordNetLemmatizer
+from numpy 
+import linalg
+from nltk.sentiment.vader
+import SentimentIntensityAnalyzer
+from nltk.tokenize 
+import sent_tokenize, word_tokenize
+from nltk.tokenize 
+import PunktSentenceTokenizer
+from nltk.corpus 
+import webtext
+from nltk.stem.porter 
+import PorterStemmer
+from nltk.stem.wordnet 
+import WordNetLemmatizer
  
 with open('stock.txt', encoding ='UTF-8') as pex:
 
@@ -76,24 +101,7 @@ for key in sorted(scores):
     print('{0}: {1}, '.format(key, scores[key]), end ='')
 print()
 </py-script>
-<py-env>
--bokeh
--numpy
--matplotlib
--paths: 
--/utlis.py
-</py-env>
-
-<py-env>
-Altair
-Numpy
-Pandas
-Scikit-learn
-Panel = 0.13.1a2
-</py-env>
 
 <py-repl id="my-repl" auto-generator="true"></py-repl>
-
-<py-script src="https://github.com/..../stockfacebookfinal.py"></py-script>
 </body>
 </html>
